@@ -1,0 +1,19 @@
+(rule
+ (alias runtest)
+ (mode promote)
+ (targets dune.inc)
+ (deps
+  (:spec %{project_root}/src/bob.mli))
+ (action
+  (with-stdout-to
+   %{targets}
+   (run
+    ortac
+    dune
+    qcheck-stm
+    %{spec}
+    %{dep:conf.ml}
+    --library=bob
+    test.ml))))
+
+(include dune.inc)
