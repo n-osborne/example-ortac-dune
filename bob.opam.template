@@ -1,8 +1,8 @@
 pin-depends: [
-  [ "ortac-dune.dev" "git+https://github.com/n-osborne/ortac#b4ddc1a74002798be4fbfb574f963609f1dd51f3" ]
-  [ "ortac-core.dev" "git+https://github.com/n-osborne/ortac#b4ddc1a74002798be4fbfb574f963609f1dd51f3" ]
-  [ "ortac-qcheck-stm.dev" "git+https://github.com/n-osborne/ortac#b4ddc1a74002798be4fbfb574f963609f1dd51f3" ]
-  [ "ortac-runtime-qcheck-stm.dev" "git+https://github.com/n-osborne/ortac#b4ddc1a74002798be4fbfb574f963609f1dd51f3" ]
-  [ "ortac-runtime.dev" "git+https://github.com/n-osborne/ortac#b4ddc1a74002798be4fbfb574f963609f1dd51f3" ]
+  [ "ortac-dune.dev" "git+https://github.com/n-osborne/ortac#fb3dc6ca68a6f5278100ada2810587f17da05fe6" ]
+  [ "ortac-core.dev" "git+https://github.com/n-osborne/ortac#fb3dc6ca68a6f5278100ada2810587f17da05fe6" ]
+  [ "ortac-qcheck-stm.dev" "git+https://github.com/n-osborne/ortac#fb3dc6ca68a6f5278100ada2810587f17da05fe6" ]
+  [ "ortac-runtime-qcheck-stm.dev" "git+https://github.com/n-osborne/ortac#fb3dc6ca68a6f5278100ada2810587f17da05fe6" ]
+  [ "ortac-runtime.dev" "git+https://github.com/n-osborne/ortac#fb3dc6ca68a6f5278100ada2810587f17da05fe6" ]
   [ "gospel.dev" "git+https://github.com/ocaml-gospel/gospel#181e693354e1e4e3c28838cde97b2c814c09b58d" ]
   ]

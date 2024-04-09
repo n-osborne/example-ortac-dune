@@ -35,3 +35,20 @@ Arguably, this is still a quite verbose stanza. And maybe not the best dune styl
 5. where to write the tests: `test.ml`
 
 Using a naming convention we could try to remove `3.` and `5.`, but that would forbid to test the same module with different configurations.
+
+As we can argue that the most common case is to test a library with one configuration, we now have:
+
+```dune
+(rule
+ (alias runtest)
+ (mode promote)
+ (targets dune.inc)
+ (deps
+  (:spec %{project_root}/src/bob.mli))
+ (action
+  (with-stdout-to
+   %{targets}
+   (run ortac dune qcheck-stm %{spec}))))
+
+(include dune.inc)
+```

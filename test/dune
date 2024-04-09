@@ -7,6 +7,6 @@
  (action
   (with-stdout-to
    %{targets}
-   (run ortac dune qcheck-stm %{spec} %{dep:conf.ml} --library=bob test.ml))))
+   (run ortac dune qcheck-stm %{spec}))))
 
 (include dune.inc)
