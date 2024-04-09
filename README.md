@@ -43,12 +43,10 @@ As we can argue that the most common case is to test a library with one configur
  (alias runtest)
  (mode promote)
  (targets dune.inc)
- (deps
-  (:spec %{project_root}/src/bob.mli))
  (action
   (with-stdout-to
    %{targets}
-   (run ortac dune qcheck-stm %{spec}))))
+   (run ortac dune qcheck-stm %{project_root}/src/bob.mli))))
 
 (include dune.inc)
 ```
